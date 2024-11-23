@@ -44,7 +44,7 @@ class _PlantListPageState extends State<PlantListPage> {
   List<Plant> plants = [
     Plant(
       speciesName: 'Monstera deliciosa',
-      indonesianName: 'Janda Bolong',
+      indonesianName: 'kayu manis',
       description: 'Tumbuhan hias populer dengan daun berlubang.',
       imageUrl: 'https://via.placeholder.com/150',
     ),
@@ -164,7 +164,9 @@ class _PlantFormPageState extends State<PlantFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.plant == null ? 'Tambah Data Tumbuhan' : 'Edit Data Tumbuhan'),
+        title: Text(widget.plant == null
+            ? 'Tambah Data Tumbuhan'
+            : 'Edit Data Tumbuhan'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
